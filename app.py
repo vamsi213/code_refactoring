@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 notes = []
-@app.route('/object', methods=['POST','GET'])
+@app.route('/object', methods=['POST'])
 def index():
         note = request.form.get("note")
         notes.append(note)
